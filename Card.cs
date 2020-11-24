@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,7 +12,7 @@ namespace ATM
     {
         private static Rule[] rules = null;
         public ulong Number { get; set; }
-        public short Pincode { private get; private set; }
+        public short Pincode { get; private set; }
 
         public static void UpdateRules(string dirName)
         {
